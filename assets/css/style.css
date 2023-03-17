@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: paleblue;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 18px;
+  height: 100vh;
+}
+
+
+
+.container {
+  width: 375px;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.144);
+}
+
+.panel-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 35vh;
+  background: rgb(9, 9, 121);
+  background: linear-gradient(0deg, hsl(241, 81%, 54%) 35%, hsl(252, 100%, 67%) 100%);
+  text-align: center;
+  padding: 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: hsl(241, 100%, 89%);
+}
+
+.panel-left .panel-heading {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.panel-left .panel-result {
+  background: rgb(9, 9, 121);
+  background: linear-gradient(0deg, hsla(241, 81%, 54%, 0) 5%, hsl(241, 81%, 54%) 60%);
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.panel-left .score {
+  font-size: 55px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.panel-left .out-of {
+  font-size: 14px;
+  font-weight: 600;
+  color: hsl(252, 100%, 80%);
+}
+
+.panel-left .panel-sub-heading {
+  color: #fff;
+  font-size: 24px;
+}
+
+.panel-left p {
+  color: hsl(252, 100%, 90%);
+  font-size: 16px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.panel-right {
+  height: 45vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: hsl(224, 30%, 27%);
+}
+
+.panel-right .panel-heading {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.panel-right .tools {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-radius: 10px;
+  background: #eee;
+}
+
+.panel-right .reaction {
+  background-color: hsla(0, 100%, 67%, 0.050);
+  font-weight: 700px;
+}
+
+.panel-right .reaction .indicator {
+  color: hsl(0, 100%, 67%);
+}
+
+.panel-right .reaction .indicator::before {
+  content: "";
+  background: url('../images/icon-reaction.svg');
+  background-position: center center;
+  background-size: cover;
+  padding: 0 8px;
+  margin-right: 5px;
+}
+
+.panel-right .scores {
+  color: hsl(224, 30%, 27%);
+}
+
+.panel-right span {
+  color: hsla(224, 30%, 27%, 0.438);
+}
+
+.panel-right .memory {
+  background-color: hsla(39, 100%, 56%, 0.050);
+  font-weight: 700px;
+}
+
+.panel-right .memory .indicator {
+  color: hsl(39, 100%, 56%);
+}
+
+.panel-right .memory .indicator::before {
+  content: "";
+  background: url('../images/icon-memory.svg');
+  background-position: center center;
+  background-size: cover;
+  padding: 0 10px;
+  margin-right: 5px;
+}
+
+.panel-right .verbal {
+  background-color: hsla(166, 100%, 37%, 0.050);
+  font-weight: 700px;
+}
+
+.panel-right .verbal .indicator {
+  color: hsl(166, 100%, 37%);
+}
+
+.panel-right .verbal .indicator::before {
+  content: "";
+  background: url('../images/icon-verbal.svg');
+  background-position: center center;
+  background-size: cover;
+  padding: 0 10px;
+  margin-right: 5px;
+}
+
+.panel-right .visual {
+  background-color: hsla(234, 85%, 45%, 0.050);
+  font-weight: 700px;
+}
+
+.panel-right .visual .indicator {
+  color: hsl(234, 85%, 45%);
+}
+
+.panel-right .visual .indicator::before {
+  content: "";
+  background: url('../images/icon-visual.svg');
+  background-position: center center;
+  background-size: cover;
+  padding: 0 10px;
+  margin-right: 5px;
+}
+
+.btn {
+  background-color: hsl(224, 30%, 27%);
+  color: #fff;
+  padding: 20px;
+  border-radius: 30px;
+  border: solid 1px transparent;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background: linear-gradient(0deg, hsl(241, 81%, 54%) 35%, hsl(252, 100%, 67%) 100%);
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 1440px;
+  }
+  .panel {
+    flex-direction: row;
+    width: 80vw;
+    border-radius: 30px;
+  }
+  .panel-left {
+    width: 50%;
+    height: 50vh;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+  }
+  .panel-right {
+    width: 50%;
+    height: 50vh;
+  }
+}
