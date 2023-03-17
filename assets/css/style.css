@@ -19,6 +19,7 @@ body {
   width: 375px;
   height: 80vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 50px auto;
@@ -201,6 +202,11 @@ body {
 
 .btn:hover {
   background: linear-gradient(0deg, hsl(241, 81%, 54%) 35%, hsl(252, 100%, 67%) 100%);
+}
+
+footer {
+  font-size: 12px;
+  margin-top: 20px;
 }
 
 @media (min-width: 1440px) {
